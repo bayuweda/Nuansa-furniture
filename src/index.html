@@ -12,188 +12,213 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-inter  m-0 p-0">
-   
-    <header class=" flex bg-primary container w-full mx-auto px-20 py-4 justify-between">
-        <div>
-          <h1 class="text-white text-3xl font-semibold">Nuansa</h1>
+  <body class="font-inter container mx-auto">
+    <header id="header" class="fixed container mx-auto w-full z-30 bg-primary">
+      <div class="px-6">
+        <div class="flex justify-between items-center py-4 px-6">
+          <div class="ml-2 lg:ml-20">
+            <h1 class="font-semibold text-3xl text-white">Nuansa</h1>
+          </div>
+          <nav class="flex">
+            <ul id="nav-links" class="lg:flex hidden gap-10 text-white font-popins text-xl font-light">
+              <li class="hover:bg-yellow-500 px-1 hover:rounded-sm hover:cursor-pointer">
+                <a href="#beranda">Beranda</a>
+              </li>
+              <li class="hover:bg-yellow-500 px-1 hover:rounded-sm hover:cursor-pointer">
+                <a href="#tentang">Tentang Kami</a>
+              </li>
+              <li class="hover:bg-yellow-500 px-1 hover:rounded-sm hover:cursor-pointer">
+                <a href="#produk">Produk</a>
+              </li>
+            </ul>
+            <div class="border-1 border-sky-50 lg:hidden">
+              <img id="menu-toggle" src="/asset/humbergur-menu.png" alt="" class="m-2 w-6 h-4 cursor-pointer">
+            </div>
+          </nav>
         </div>
-        <nav class="flex">
-          <ul class="list-none gap-4 text-white hidden lg:flex">
-            <li><a href="">Beranda</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Service</a></li>
+
+        <div id="mobile-menu" class="lg:hidden flex justify-evenly gap-9 fixed top-16 right-0 bg-primary h-full w-1/2 transform translate-x-full transition-transform duration-500 ease-in-out">
+          <ul class="py-2 text-white">
+            <li class="hover:bg-yellow-500 px-4 py-2 cursor-pointer">
+              <a href="#beranda">Beranda</a>
+            </li>
+            <li class="hover:bg-yellow-500 px-4 py-2 cursor-pointer">
+              <a href="#projek">Tentang Kami</a>
+            </li>
+            <li class="hover:bg-yellow-500 px-4 py-2 cursor-pointer">
+              <a href="#keahlian">Produk</a>
+            </li>
           </ul>
-        </nav>
-        
-      </header>
-    <main>
-        <!-- hero section start -->
-        <section class="bg-primary w-full container mx-auto flex flex-col md:flex-row  lg:flex-row justify-center items-center px-8 py-28">
-            <div class="w-full md:w-1/2 lg:w-1/2 lg:ml-20 md:mr-14 lg:pl-14 text-center lg:text-left">
-              <h1 class="text-white text-3xl lg:text-5xl  font-semibold leading-tight">
-                Modern Interior Dengan kualitas terbaik
-              </h1>
-              <div class="pt-8 flex flex-col lg:flex-row gap-4 justify-center lg:justify-start w-full ">
-               
-                <button class="bg-yellow-500 px-4 py-2 rounded-full">
-                    Shop Now
-                  </button>
-                  <button class="border-2 px-4 py-2 rounded-full"><a href="./produk.html">Explore</a></button>
-               
-              </div>
-            </div>
-            <div class="w-full md:w-1/2 lg:w-1/2 relative mt-8 lg:mt-0 flex justify-center lg:justify-end">
-              <img src="/asset/couch 1.png" alt="Couch" class="w-full max-w-md lg:max-w-full relative z-30" />
-              <img src="/asset/Dotted.png" alt="Dotted background" class="w-24 h-24 lg:w-40 lg:h-40 absolute top-0 right-0 z-10 hidden" />
-            </div>
-        </section>
-          <!-- hero section end-->
-          
-        <!-- product favorite start -->
-        <section class="container mx-auto mt-24">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
-                <div class="w-full flex-col flex justify-center items-center md:items-start lg:items-start mx-auto p-6">
-                    <h1 class="text-3xl font-semibold text-center md:text-start lg:text-start">Dibuat Dengan Bahan terbaik</h1>
-                    <p class="text-slate-600 text-center md:text-start lg:text-start">
-                      Donec mattis porta eros, aliquet finibus risus interdum at. Nulla
-                      vivethe as it was for us to know what was to be done.
-                    </p>
-                    <button class="rounded-full bg-slate-950 px-4 py-2 text-white w-28">
-                      Explore
-                    </button>
-                  </div>
-                  <div class="">
-                    <img src="/asset/product-2.png" alt="" class="mx-auto" />
-                    <div class="text-center  font-semibold">
-                      <h1>Kruzo Aero Chair</h1>
-                      <h2>Rp 200.000</h3>
-                    </div>
-                  </div>
-                  <div class="">
-                    <img src="/asset/product-2.png" alt="" class="mx-auto" />
-                    <div class="text-center  font-semibold">
-                      <h1>Kruzo Aero Chair</h1>
-                      <h2>Rp 200.000</h3>
-                    </div>
-                  </div>
-                  <div class="">
-                    <img src="/asset/product-2.png" alt="" class="mx-auto" />
-                    <div class="text-center  font-semibold">
-                      <h1>Kruzo Aero Chair</h1>
-                      <h2>Rp 200.000</h3>
-                    </div>
-                  </div>
-            </div>
-       
-        </section>
-        <!-- product favorite end -->
+        </div>
+      </div>
+    </header>
 
-        <!-- why chois us start -->
-        <section class=" flex mt-24 container  mx-auto md:mr-6  justify-center">
-          <div class="w-full md:w-1/2 lg:w-1/2  flex-col mx-auto flex gap-5">
-              <h1 class="text-3xl font-bold text-center md:text-start">Kenapa Memilih Kami</h1>
-              <p class="text-center md:text-start">Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what was to be done. the</p>
-             <div class="flex flex-wrap justify-center md:justify-start  mt-6  ">
-              <div class="w-1/2 flex flex-col md:items-start   items-center p-2 ">
-                <div class="w-10 h-10 bg-primary rounded-full p-2 bg-opacity-65"><img src="/asset/computer.png" alt=""></div>
-                <h3 class="font-semibold">Modern desain</h3>
-                <p class="text-slate-700 text-center md:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam maxime earum odio fugit.</p>
-              </div>
-              <div class="w-1/2 flex flex-col md:items-start items-center ">
-                <div class="w-10 h-10 bg-primary rounded-full p-2 bg-opacity-65"><img src="/asset/price-tag.png" alt=""></div>
-                <h3 class="font-semibold">Harga yang terjanngkau</h3>
-                <p class="text-slate-700 text-center md:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam maxime earum odio fugit.</p>
-              </div>
-              <div class="w-1/2 mt-3 flex flex-col md:items-start  items-center p-2">
-                <div class="w-10 h-10 bg-primary rounded-full p-2 bg-opacity-65"><img src="/asset/creativity.png" alt=""></div>
-                <h3 class="font-semibold">Costum desain</h3>
-                <p class="text-slate-700 text-center md:text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ullam maxime earum odio fugit.</p>
-              </div>
-              
-             </div>
+    <main class="">
+      <!-- hero section start -->
+      <section id="beranda" class="bg-primary w-full pt-14 container mx-auto flex flex-col md:flex-row lg:flex-row justify-center items-center">
+        <div class="w-full md:w-1/2 py-4 lg:w-1/2 mt-10 lg:ml-20 md:mr-14 lg:pl-14 text-center lg:text-left">
+          <h1 class="text-white text-3xl lg:text-5xl font-semibold leading-tight">
+            Modern Interior Dengan kualitas terbaik
+          </h1>
+          <div class="pt-8 flex flex-col lg:flex-row gap-4 justify-center lg:justify-start w-full">
+            <button class="bg-yellow-500 px-4 py-2 rounded-full">
+              Shop Now
+            </button>
+            <button class="border-2 px-4 py-2 rounded-full"><a href="./produk.html">Explore</a></button>
           </div>
-          <div class="relative w-1/3 hidden md:block ">
-            <img src="/asset/Dot.png" alt="" class="absolute top-0 left-0 z-0 ">
-            <img src="/asset/why-choose-us-img 1.png" alt="" class=" absolute md:h-[80%] shadow-lg z-10 m-10 object-cover">
-          </div>
-        </section>
-      <!-- why chois us end -->
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/2 relative mt-8 lg:mt-0 flex justify-center">
+          <img src="/asset/hero-banner.png" alt="Couch" class="max-w-md lg:max-w-full relative z-30" />
+          <img src="/asset/Dotted.png" alt="Dotted background" class="w-24 h-24 lg:w-40 lg:h-40 absolute top-0 right-0 z-10 hidden" />
+        </div>
+      </section>
+      <!-- hero section end -->
 
+      <!-- product favorite start -->
       <section class="container mx-auto mt-24">
-        <div class="mx-10 flex gap-2" >
-          <div class="relative w-1/2 p-10 ">
-            <img src="/asset/Dotted.png" alt="" class="absolute top-0 left-0 z-0 ">
-            <img src="/asset/Group 30.png" alt="" class="relative z-10 ml-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <div class="w-full flex-col flex justify-center items-center md:items-start lg:items-start mx-auto p-6">
+            <h1 class="text-3xl font-semibold text-center md:text-start lg:text-start">Dibuat Dengan Bahan terbaik</h1>
+            <p class="text-slate-600 text-center md:text-start lg:text-start">
+              Kami menggunakan bahan terbaik untuk memastikan produk kami tahan lama dan berkualitas tinggi. Setiap produk dirancang dengan teliti untuk memenuhi standar tertinggi.
+            </p>
+            <button class="rounded-full bg-slate-950 px-4 py-2 text-white w-28">
+              <a href="./produk.html">Explore</a>
+            </button>
           </div>
-          <div class=" w-1/2 mt-10 p-10 flex-col flex gap-4">
-            <h1 class="text-4xl font-bold">
-              Kami akan membantu anda 
-              menemukan barang impian 
-              anda
-            </h1>
-            <p>Donec mattis porta eros, aliquet finibus risus interdum at. Nulla vivethe as it was for us to know what was to be done. the this is a long  post for the text.`This small text has to be place here, since this is a place holder. You can also chane it.</p>
-            <div class="w-full flex flex-wrap">
-              
+          <div class="shadow-lg">
+            <img src="/asset/favorite-1.png" alt="" class="mx-auto" />
+            <div class="text-center font-semibold">
+              <h1>Kruzo Aero Chair</h1>
+              <h2>Rp 200.000</h2>
+            </div>
+          </div>
+          <div class="shadow-lg">
+            <img src="/asset/favorite-2.png" alt="" class="mx-auto" />
+            <div class="text-center font-semibold">
+              <h1>Kruzo Aero Chair</h1>
+              <h2>Rp 200.000</h2>
+            </div>
+          </div>
+          <div class="shadow-lg">
+            <img src="/asset/favorite-3.png" alt="" class="mx-auto" />
+            <div class="text-center font-semibold">
+              <h1>Kruzo Aero Chair</h1>
+              <h2>Rp 200.000</h2>
             </div>
           </div>
         </div>
       </section>
+      <!-- product favorite end -->
 
-      <section class="container  mx-auto mt-24 ">
-        <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 ">
-          <div class="  flex-col flex gap-4 p-4">
-            <h1 class="text-3xl font-semibold">Pilih Dekorasi
-              Impianmu</h1>
-            <p class="text-slate-600">
-              Donec mattis porta eros, aliquet finibus risus interdum at. Nulla
-              vivethe as it was for us to know what was to be done.
+      <!-- about us section start -->
+      <section id="tentang" class="container mx-auto mt-24">
+        <div class="mx-10 flex flex-col lg:flex-row gap-2">
+          <div class="relative w-full lg:w-1/2 p-10">
+            <img src="/asset/Dotted.png" alt="" class="absolute top-0 left-0 z-0">
+            <img src="/asset/about-image.png" alt="" class="relative z-10 ml-10">
+          </div>
+          <div class="w-full lg:w-1/2 mt-10 p-2 flex flex-col gap-4">
+            <h1 class="text-4xl text-center font-bold">
+              Tentang Kami
+            </h1>
+            <p class="text-center">
+              Kami adalah perusahaan yang berdedikasi untuk memberikan produk interior terbaik dengan desain modern dan bahan berkualitas tinggi. Misi kami adalah memberikan kepuasan maksimal kepada pelanggan dengan produk yang tahan lama dan stylish.
             </p>
-            
-          </div>
-          <div class="  bg-primary  rounded-lg shadow-lg p-2">
-  
-            <div class="text-center  font-semibold">
-              <h1>Kruzo Aero Chair</h1>
+            <div class="w-full flex flex-wrap">
+              <!-- Isi dengan elemen-elemen yang diperlukan -->
             </div>
-            <img src="/asset/product-2.png" alt="" class="mx-auto" />
-          </div>
-          <div class="  bg-primary  rounded-lg shadow-lg p-2">
-  
-            <div class="text-center  font-semibold">
-              <h1>Kruzo Aero Chair</h1>
-            </div>
-            <img src="/asset/product-2.png" alt="" class="mx-auto" />
-          </div>
-          <div class="  bg-primary  rounded-lg shadow-lg p-2">
-  
-            <div class="text-center  font-semibold">
-              <h1>Kruzo Aero Chair</h1>
-            </div>
-            <img src="/asset/product-2.png" alt="" class="mx-auto" />
-          </div>
-          <div class="  bg-primary  rounded-lg shadow-lg p-2">
-  
-            <div class="text-center  font-semibold">
-              <h1>Kruzo Aero Chair</h1>
-            </div>
-            <img src="/asset/product-2.png" alt="" class="mx-auto" />
-          </div>
-         
-        </section>
-  
-        <!-- <section class="container mx-auto flex justify-center mt-24">
-          <div class="flex w-1/2  gap-4">
-            <div class=" text-center flex gap-3 flex-col">
-              <h1 class="text-xl font-semibold">Testimoni Pelanggan</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ullam laborum tempora sapiente corrupti repellat omnis odio! Tenetur, veritatis quas.</p>
-            </div>
-              <div class="flex flex-col justify-center">
-                <div class="w-10 h-10 bg-primary rounded-full p-2 bg-opacity-65 flex flex-col justify-center "><img src="/asset/price-tag.png" alt=""></div>
-              </div>
           </div>
         </div>
-      </section> -->
+      </section>
+      <!-- about us section end -->
+
+      <!-- why choose us start -->
+      <section class="container mx-auto mt-24">
+        <div class="flex mx-20">
+          <div class="w-full md:w-1/2 lg:w-1/2 flex-col mx-auto flex gap-5">
+            <h1 class="text-3xl font-bold text-center md:text-start">Kenapa Memilih Kami</h1>
+            <p class="text-center md:text-start">
+              Kami menawarkan produk dengan desain modern, harga terjangkau, dan opsi kustomisasi sesuai keinginan Anda. Dengan bahan berkualitas dan layanan terbaik, kami adalah pilihan tepat untuk memenuhi kebutuhan interior Anda.
+            </p>
+            <div class="flex flex-wrap justify-start md:justify-start mt-6">
+              <div class="w-full md:w-1/2 lg:w-1/2 md:p-2 lg:p-2 flex flex-col md:items-start items-center">
+                <div class="w-10 h-10 bg-primary rounded-full p-2 bg-opacity-65"><img src="/asset/computer.png" alt=""></div>
+                <h3 class="font-semibold">Modern design</h3>
+                <p class="text-slate-700 text-center md:text-start">Desain modern yang stylish dan fungsional untuk setiap ruangan.</p>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/2 md:p-2 lg:p-2 flex flex-col md:items-start items-center">
+                <div class="w-10 h-10 bg-primary rounded-full p-2 bg-opacity-65"><img src="/asset/price-tag.png" alt=""></div>
+                <h3 class="font-semibold">Harga yang terjangkau</h3>
+                <p class="text-slate-700 text-center md:text-start">Produk berkualitas dengan harga yang sesuai di kantong.</p>
+              </div>
+              <div class="w-full mt-3 md:w-1/2 lg:w-1/2 md:p-2 lg:p-2 flex flex-col md:items-start items-center">
+                <div class="w-10 h-10 bg-primary rounded-full p-2 bg-opacity-65"><img src="/asset/creativity.png" alt=""></div>
+                <h3 class="font-semibold">Kustom desain</h3>
+                <p class="text-slate-700 text-center md:text-start">Opsi kustomisasi untuk memenuhi selera dan kebutuhan Anda.</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-1/2 hidden md:flex lg:flex justify-end">
+            <div class="relative w-1/2 z-0 md:block p-10 lg:block">
+              <img src="/asset/Dot.png" alt="" class="absolute top-0 left-0 z-0">
+              <img src="/asset/why-choose-us-img 1.png" alt="" class="absolute md:h-[80%] shadow-lg z-10 object-cover">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- why choose us end -->
+
+      <!-- product selection start -->
+      <section id="produk" class="container mx-auto mt-24">
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="flex-col flex gap-4 p-4 col-span-2 md:col-span-1">
+            <h1 class="text-3xl font-semibold">Pilih Dekorasi Impianmu</h1>
+            <p class="text-slate-600">
+              Temukan berbagai pilihan dekorasi yang sesuai dengan gaya dan selera Anda. Kami menyediakan berbagai produk mulai dari kursi, lemari, hingga meja yang siap mempercantik ruangan Anda.
+            </p>
+          </div>
+
+          <!-- Produk 1 -->
+          <div class="relative bg-primary rounded-lg shadow-lg p-2 group">
+            <div class="text-center text-white font-semibold">
+              <h1>Kursi</h1>
+            </div>
+            <div class="flex-col justify-center w-full h-full items-center flex">
+              <img src="/asset/kursi.png" alt="" class="mx-auto my-auto rounded-lg" />
+            </div>
+          
+            <div class="absolute inset-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+              <button class="bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-gray-200 transition duration-300"><a href="./produk.html#kursi">Lihat Produk</a></button>
+            </div>
+          </div>
+
+          <!-- Produk 2 -->
+          <div class="relative bg-primary rounded-lg shadow-lg p-2 group">
+            <div class="text-center text-white font-semibold">
+              <h1>Lemari</h1>
+            </div>
+            <img src="/asset/lemari.png" alt="" class="mx-auto rounded-lg" />
+            <div class="absolute inset-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+              <button class="bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-gray-200 transition duration-300"><a href="./produk.html#lemari">Lihat Produk</a></button>
+            </div>
+          </div>
+
+          <!-- Produk 3 -->
+          <div class="relative bg-primary rounded-lg shadow-lg p-2 group">
+            <div class="text-center text-white font-semibold">
+              <h1>Meja</h1>
+            </div>
+            <div class="flex-col justify-center w-full h-full items-center flex">
+              <img src="/asset/meja.png" alt="" class="mx-auto my-auto rounded-lg" />
+            </div>
+            <div class="absolute inset-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100">
+              <button class="bg-white px-4 py-2 rounded-lg text-primary font-semibold hover:bg-gray-200 transition duration-300"><a href="./produk.html#meja">Lihat Produk</a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- product selection end -->
     </main>
     <footer class="bg-primary text-white py-4 mt-24">
       <div class="container mx-auto text-center">
@@ -208,5 +233,6 @@
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
